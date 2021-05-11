@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 originals_directory=(~/Pictures/Photos\ Library.photoslibrary/originals)
 echo "\nOriginals directory: ${originals_directory}\n"
