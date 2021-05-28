@@ -6,8 +6,7 @@ echo "\nOriginals directory: ${originals_directory}\n"
 sub_directories=(`cd "${originals_directory}/" && ls -F | grep /`)
 echo "Sub directories: ${sub_directories[@]}\n"
 
-echo 'Provide target directory:'
-read target_directory_name
+read -p 'Provide target directory: ' target_directory_name
 
 echo '\nMaking target directory:'
 `cd "${originals_directory}/" && mkdir ${target_directory_name}`
